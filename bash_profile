@@ -13,4 +13,8 @@ alias rs='bundle exec rspec spec'
 alias gs='git status'
 alias gfa='git fetch --all'
 alias gb='git branch'
+alias gd='git diff'
 alias gco='git checkout'
+alias gl='git log'
+alias gp='git push'
+
