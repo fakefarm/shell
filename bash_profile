@@ -1,11 +1,14 @@
 # phishme
 alias ss='ssh triage.vm'
 
-# bundle
+# rails & friends
 alias be='bundle exec'
+alias rr='bundle exec rake routes'
+alias rm='bundle exec rake db:migrate'
 
 # helpers
 alias bp='vi $HOME/shell/bash_profile' # open bash_profile
+alias bc="cat $HOME/shell/bash_profile | grep $1 " 
 alias src='source $HOME/shell/bash_profile'
 alias rs='bundle exec rspec spec'
 
