@@ -1,5 +1,7 @@
-# phishme
+# navigation
 alias ss='ssh triage.vm'
+alias ls='cd /srv/license_server/dev'
+alias ap='cd /srv/appliance/dev'
 
 # rails & friends
 alias be='bundle exec'
