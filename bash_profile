@@ -13,7 +13,7 @@ alias rs='bundle exec rspec spec'
 
 # tools related
 alias bp='vi $HOME/shell/bash_profile' # open bash_profile
-alias bc="cat $HOME/shell/bash_profile | grep $1 " 
+alias bb="cat $HOME/shell/bash_profile | grep $1 "
 alias src='source $HOME/shell/bash_profile'
 
 # git
@@ -27,3 +27,11 @@ alias gp='git push'
 alias gr='git rebase -i'
 alias gm='git commit -m'
 
+
+# functions
+parse_git_branch() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+# prompt
+export PS1="$(pwd)\[\033[32m\]\$(parse_git_branch)\[\033[00m\] "
