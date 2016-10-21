@@ -36,4 +36,4 @@ parse_git_branch() {
 }
 
 # prompt
-export PS1="\$PWD\[\033[32m\]\$(parse_git_branch)\[\033[00m\]\n > "
+export PS1="\$PWD\[\033[32m\]\$(parse_git_branch) \[\033[01;34m\]\n>\[\e[0m\] "
