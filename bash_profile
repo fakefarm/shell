@@ -22,4 +22,5 @@ alias gd='git diff'
 alias gco='git checkout'
 alias gl='git log'
 alias gp='git push'
+alias gr='git rebase -i'
 
