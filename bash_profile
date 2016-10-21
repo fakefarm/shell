@@ -26,6 +26,7 @@ alias gl='git log'
 alias gp='git push'
 alias gr='git rebase -i'
 alias gm='git commit -m'
+alias ga='git add .'
 
 
 # functions
@@ -34,4 +35,4 @@ parse_git_branch() {
 }
 
 # prompt
-export PS1="\$PWD \[\033[32m\]\$(parse_git_branch)\[\033[00m\]\n > "
+export PS1="\$PWD\[\033[32m\]\$(parse_git_branch)\[\033[00m\]\n > "
