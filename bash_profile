@@ -30,7 +30,8 @@ alias gpp='git pull'
 alias gr='git rebase -i'
 alias gm='git commit -m'
 alias ga='git add .'
-
+alias grhh='git reset --hard HEAD'
+alias gcf='git clean -fd'
 
 # functions
 parse_git_branch() {
