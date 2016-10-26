@@ -3,6 +3,7 @@ alias ss='ssh triage.vm'
 alias li='cd /srv/license_server/dev'
 alias ap='cd /srv/appliance/dev'
 alias no='vi $HOME/Code/notes'
+alias dno='cd $HOME/Code/notes && git pull'
 alias tt='$HOME/bin/tunnel'
 
 # rails & friends
@@ -15,6 +16,7 @@ alias rs='bundle exec rspec spec'
 alias bp='vi $HOME/shell/bash_profile' # open bash_profile
 alias bb="cat $HOME/shell/bash_profile | grep $1 "
 alias src='source $HOME/shell/bash_profile'
+alias v='vi .'
 
 # git
 alias gs='git status'
@@ -28,7 +30,8 @@ alias gpp='git pull'
 alias gr='git rebase -i'
 alias gm='git commit -m'
 alias ga='git add .'
-
+alias grhh='git reset --hard HEAD'
+alias gcf='git clean -fd'
 
 # functions
 parse_git_branch() {
