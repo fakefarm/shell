@@ -18,6 +18,10 @@ alias bb="cat $HOME/shell/bash_profile | grep $1 "
 alias src='source $HOME/shell/bash_profile'
 alias v='vi .'
 
+# unix adjustments
+alias ls='ls -AGF'
+
+
 # git
 alias gs='git status'
 alias gfa='git fetch --all'
