@@ -1,3 +1,10 @@
+# exports
+export PS1="\[\033[91m\]\$PWD\[\e[0m\]\[\033[32m\]\$(parse_git_branch) \[\033[01;34m\]\n>\[\e[0m\] "
+
+# rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
 # personal
 alias ss='ssh triage.vm'
 alias li='cd /srv/license_server/dev'
@@ -21,7 +28,6 @@ alias v='vi .'
 # unix adjustments
 alias ls='ls -AGF'
 
-
 # git
 alias gs='git status'
 alias gfa='git fetch --all'
@@ -42,6 +48,3 @@ parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
-# prompt
-export PS1="\$PWD\[\033[32m\]\$(parse_git_branch) \[\033[01;34m\]\n>\[\e[0m\] "
-export PATH="$HOME/.rbenv/bin:$PATH"
