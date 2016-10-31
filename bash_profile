@@ -42,6 +42,7 @@ alias gm='git commit -m'
 alias ga='git add .'
 alias grhh='git reset --hard HEAD'
 alias gcf='git clean -fd'
+copr = "!f() { git fetch -fu origin refs/pull/$1/head:pr-$1; git checkout pr-$1; } ; f"
 
 # functions
 parse_git_branch() {
