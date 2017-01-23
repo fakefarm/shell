@@ -12,6 +12,8 @@ alias ap='cd /srv/appliance/dev'
 alias no='vi $HOME/Code/notes'
 alias dno='cd $HOME/Code/notes && git pull'
 alias tt='$HOME/bin/tunnel'
+alias ali='atom host/license_server/dev/'
+alias aaa='atom host/appliance/dev/'
 
 # rails & friends
 alias be='bundle exec'
@@ -29,7 +31,7 @@ alias v='vi .'
 alias ls='ls -AGF'
 
 # git
-alias gs='git status'
+alias gs='git status -sb'
 alias gfa='git fetch --all'
 alias gb='git branch'
 alias gd='git diff'
