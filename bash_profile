@@ -14,6 +14,8 @@ alias dno='cd $HOME/Code/notes && git pull'
 alias tt='$HOME/bin/tunnel'
 alias ali='atom host/license_server/dev/'
 alias aaa='atom host/appliance/dev/'
+alias us='cd $HOME/Code/rewrites/_underscore'
+alias ff='cd $HOME/Code/repos/FakeFarmApp'
 
 # rails & friends
 alias be='bundle exec'
@@ -52,4 +54,3 @@ copr = "!f() { git fetch -fu origin refs/pull/$1/head:pr-$1; git checkout pr-$1;
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
-
