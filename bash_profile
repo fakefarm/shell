@@ -7,6 +7,7 @@ eval "$(rbenv init -)"
 
 # personal
 alias ss='ssh triage.vm'
+alias ser='python -m SimpleHTTPServer 8000'
 alias li='cd /srv/license_server/dev'
 alias ap='cd /srv/appliance/dev'
 alias no='vi $HOME/Code/notes'
